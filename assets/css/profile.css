@@ -1,0 +1,127 @@
+/* importing styles */
+@import url("../fonts/Montserrat/montserrat.css");
+
+/* basic styling to all elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* standart changes for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* reseting margins and paddings for all headings and paragraphs */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 26px;
+}
+
+header .menu ul {
+    display: flex;
+    gap: 28px;
+}
+
+header .menu ul li {
+    list-style: none;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+header .menu ul li a:hover {
+    color: #35AFF4;
+}
+
+/* profile */
+.profile {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile h1 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.profile .user-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    border: 1px solid #DEDEDE;
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.profile .user-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #35AFF4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.profile .user-info button:hover {
+    background-color: #c53232;
+}
+
+.profile .user {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile .user img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile .user .info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile .user .info .name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.profile .user .info .num {
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}

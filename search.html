@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search results page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/search.css">
+</head>
+<body>
+<header>
+    <nav>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo" class="test-0-logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a class="test-0-nav-1" href="#">Promotions</a></li>
+                <li><a class="test-0-nav-2" href="#">Search</a></li>
+                <li><a class="test-0-nav-3" href="#">Check In</a></li>
+                <li><a class="test-0-nav-4" href="#">Personal account</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<form class="search-block">
+    <h1>Search results</h1>
+
+    <div class="search">
+        <div class="input">
+            <p>From</p>
+            <select disabled name="from" id="from" class="test-0-fd">
+                <option value="1">Astana</option>
+                <option value="2">Almaty</option>
+                <option value="3">Shymkent</option>
+                <option value="4">Kokshetau</option>
+                <option value="5">Karaganda</option>
+                <option value="6">Atyrau</option>
+                <option value="7">Aktobe</option>
+                <option value="8">Kostanay</option>
+                <option value="9">Pavlodar</option>
+                <option value="10">Petropavlovsk</option>
+                <option value="11">Semey</option>
+                <option value="12">Uralsk</option>
+                <option value="13">Taraz</option>
+                <option value="14">Kyzylorda</option>
+                <option value="15">Taldykorgan</option>
+                <option value="16">Turkestan</option>
+                <option value="17">Zhezkazgan</option>
+                <option value="18">Temirtau</option>
+                <option value="19">Kyzylzhar</option>
+                <option value="20">Rudny</option>
+                <option value="21">Ekibastuz</option>
+                <option value="22">Balqash</option>
+                <option value="23">Ridder</option>
+                <option value="24">Zhanaozen</option>
+                <option value="25">Kentau</option>
+                <option value="26">Shakhtinsk</option>
+            </select>
+        </div>
+        <div class="input">
+            <p>To</p>
+            <select disabled name="to" id="to" class="test-0-fa">
+                <option value="1">Astana</option>
+                <option value="2">Almaty</option>
+                <option value="3">Shymkent</option>
+                <option value="4">Kokshetau</option>
+                <option value="5">Karaganda</option>
+                <option value="6">Atyrau</option>
+                <option value="7">Aktobe</option>
+                <option value="8">Kostanay</option>
+                <option value="9">Pavlodar</option>
+                <option value="10">Petropavlovsk</option>
+                <option value="11">Semey</option>
+                <option value="12">Uralsk</option>
+                <option value="13">Taraz</option>
+                <option value="14">Kyzylorda</option>
+                <option value="15">Taldykorgan</option>
+                <option value="16">Turkestan</option>
+                <option value="17">Zhezkazgan</option>
+                <option value="18">Temirtau</option>
+                <option value="19">Kyzylzhar</option>
+                <option value="20">Rudny</option>
+                <option value="21">Ekibastuz</option>
+                <option value="22">Balqash</option>
+                <option value="23">Ridder</option>
+                <option value="24">Zhanaozen</option>
+                <option value="25">Kentau</option>
+                <option value="26">Shakhtinsk</option>
+            </select>
+        </div>
+        <div class="input">
+            <p>Departure date</p>
+            <input disabled type="date" id="departure" name="departure" class="test-0-fdt">
+        </div>
+        <div class="input">
+            <p>Return date</p>
+            <input disabled type="date" id="return" name="return" class="test-0-fat">
+        </div>
+        <div class="input">
+            <p>Passengers</p>
+            <input disabled value="1" type="number" id="passengers" name="passengers" min="1" max="8"
+                   class="test-0-fnp">
+        </div>
+    </div>
+</form>
+<section class="results">
+    <div class="item">
+        <div class="main-content">
+            <div class="info">
+                <div class="left">
+                    <div class="flight-number test-4-fn">
+                        EN8844
+                    </div>
+                    <div class="route">
+                        Frankfurt - Turin
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="airports">
+                        Frankfurt International (FRA) - Turin Airport (TRN)
+                    </div>
+                    <div class="date test-4-dd test-4-dt test-4-at test-4-ft">
+                        12:30 - 13:45
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="price test-4-fp">
+                    100$
+                </div>
+                <div class="book test-4-bsb">
+                    Book
+                </div>
+            </div>
+        </div>
+        <div class="additional-content">
+            <div class="airplane">
+                <img src="./assets/images/clouds/cloud_064.png"/>
+                <div class="info">
+                    <div class="label">
+                        Time in flight
+                    </div>
+                    <div class="value">
+                        1h 15m
+                    </div>
+                </div>
+            </div>
+            <div class="airplane">
+                <img src="./assets/images/aircrafts/commercial_airline_main.png"/>
+                <div class="info">
+                    <div class="label">
+                        Aircraft
+                    </div>
+                    <div class="value test-4-at">
+                        Airbus A320
+                    </div>
+                </div>
+            </div>
+            <div class="chance">
+                <div class="circle green"></div>
+                <div class="info">
+                    <div class="label">
+                        Departure chance
+                    </div>
+                    <div class="value test-4-fh">
+                        90%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="main-content">
+            <div class="info">
+                <div class="left">
+                    <div class="flight-number test-4-fn">
+                        EN8845
+                    </div>
+                    <div class="route">
+                        Turin - Frankfurt
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="airports">
+                        Turin Airport (TRN) - Frankfurt International (FRA)
+                    </div>
+                    <div class="date test-4-dd test-4-dt test-4-at test-4-ft">
+                        12:30 - 13:45
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="price">
+                    120$
+                </div>
+                <div class="book test-4-bsb">
+                    Book
+                </div>
+            </div>
+        </div>
+        <div class="additional-content">
+            <div class="airplane">
+                <img src="./assets/images/clouds/cloud_064.png"/>
+                <div class="info">
+                    <div class="label">
+                        Time in flight
+                    </div>
+                    <div class="value">
+                        1h 15m
+                    </div>
+                </div>
+            </div>
+            <div class="airplane">
+                <img src="./assets/images/aircrafts/commercial_airline_main.png"/>
+                <div class="info">
+                    <div class="label">
+                        Aircraft
+                    </div>
+                    <div class="value test-4-at">
+                        Airbus A320
+                    </div>
+                </div>
+            </div>
+            <div class="chance">
+                <div class="circle red"></div>
+                <div class="info">
+                    <div class="label">
+                        Departure chance
+                    </div>
+                    <div class="value test-4-fh">
+                        20%
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+</body>
+</html>

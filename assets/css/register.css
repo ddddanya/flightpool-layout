@@ -1,0 +1,165 @@
+/* importing styles */
+@import url("../fonts/Montserrat/montserrat.css");
+
+/* basic styling to all elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* standart changes for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* reseting margins and paddings for all headings and paragraphs */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 26px;
+}
+
+header .menu ul {
+    display: flex;
+    gap: 28px;
+}
+
+header .menu ul li {
+    list-style: none;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+header .menu ul li a:hover {
+    color: #35AFF4;
+}
+
+/* login block */
+
+.login-block {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.login-block h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 20px;
+
+    text-align: center;
+}
+
+.login-block input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.login-block button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #35AFF4;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.login-block button:hover {
+    opacity: 0.7;
+}
+
+.login-block p {
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #909090;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header .menu ul {
+        display: none;
+    }
+
+    header .menu ul.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header .menu ul li {
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    header .menu ul.active {
+        top: 40px;
+    }
+
+    .login-block {
+        padding: 10px;
+    }
+
+    .login-block h1 {
+        font-size: 20px;
+    }
+
+    .login-block input {
+        padding: 8px;
+    }
+
+    .login-block button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .login-block p {
+        font-size: 14px;
+    }
+}

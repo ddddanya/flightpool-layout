@@ -1,0 +1,162 @@
+/* importing styles */
+@import url("../fonts/Montserrat/montserrat.css");
+
+/* basic styling to all elements */
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* standart changes for body */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* reseting margins and paddings for all headings and paragraphs */
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    padding: 20px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    height: 26px;
+}
+
+header .menu ul {
+    display: flex;
+    gap: 28px;
+}
+
+header .menu ul li {
+    list-style: none;
+}
+
+header .menu ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.2s ease-in-out;
+}
+
+header .menu ul li a:hover {
+    color: #35AFF4;
+}
+
+/* seat selection */
+.seat {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.seat h1 {
+    font-size: 34px;
+    margin-bottom: 6px;
+}
+
+.seat > p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.seat-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.seat-block .row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.seat-block .row div:nth-child(2) {
+    margin-right: 50px;
+}
+.seat-block .row:nth-child(6) {
+    margin-bottom: 20px;
+}
+.seat-block p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #DEDEDE;
+}
+
+.seat-block .seat {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #DEDEDE;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.seat-block .seat:hover {
+    background-color: #35AFF4;
+    color: #fff;
+}
+
+.seat-block .seat.active {
+    background-color: #35AFF4;
+    color: #fff;
+}
+
+.seat-block .seat.active:hover {
+    background-color: #35AFF4;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header .menu ul {
+        display: none;
+    }
+
+    header .menu ul.active {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .seat-block {
+        margin: 0;
+        padding: 10px;
+    }
+}

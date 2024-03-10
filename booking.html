@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/booking.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="assets/images/logo.png" alt="logo" class="test-0-logo">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a class="test-0-nav-1" href="#">Promotions</a></li>
+                    <li><a class="test-0-nav-2" href="#">Search</a></li>
+                    <li><a class="test-0-nav-3" href="#">Check In</a></li>
+                    <li><a class="test-0-nav-4" href="#">Personal account</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="results">
+        <div class="item">
+            <div class="main-content">
+                <div class="info">
+                    <div class="left">
+                        <div class="flight-number test-4-fn">
+                            EN8844
+                        </div>
+                        <div class="route test-5-tcity test-5-fcity">
+                            Frankfurt - Turin
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div class="airports test-5-from test-5-to">
+                            Frankfurt International (FRA) - Turin Airport (TRN)
+                        </div>
+                        <div class="date test-5-dt test-5-at">
+                            <b class="test-5-dd">22.02.2024</b> 12:30 - 13:45
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="price test-5-fp">
+                        100$
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="passengers">
+    <h1>Passengers information</h1>
+
+    <div class="item">
+        <div class="form">
+            <div class="input">
+                <p>First Name</p>
+                <input type="text" name="first_name" id="first_name" class="test-5-name" placeholder="John" required>
+            </div>
+            <div class="input">
+                <p>Last Name</p>
+                <input type="text" name="last_name" id="last_name" class="test-5-last" placeholder="Doe" required>
+            </div>
+            <div class="input">
+                <p>Date of Birth</p>
+                <input type="date" name="date_of_birth" id="date_of_birth" class="test-5-dob" required>
+            </div>
+            <div class="input">
+                <p>Document Number</p>
+                <input type="text" name="document_number" id="document_number" class="test-5-doc" placeholder="AA1234567" required>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="test-5-remove">Remove</button>
+        </div>
+    </div>
+
+    <div class="button test-5-add">
+        Add passenger
+    </div>
+
+</section>
+
+<section class="total">
+    <div class="price test-5-price">
+        Total: 100$
+    </div>
+    <div class="button test-5-book">
+        Book
+    </div>
+</section>
+</body>
+</html>
